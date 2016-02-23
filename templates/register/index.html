@@ -1,0 +1,28 @@
+<div class="container nav-padding">
+  <h1>Inscription</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <form class="form" (ngSubmit)="test()" method="post">
+        <div class="form-group">
+          <label for="username">Nom d'utilisateur</label>
+          <input class="form-control" type="text" [(ngModel)]="username" placeholder="Entrer your username">
+        </div>
+        <div class="form-group">
+          <label for="mail">Adresse mail</label>
+          <input class="form-control" type="email" [(ngModel)]="mail" placeholder="Entrer your mail">
+        </div>
+        <div class="form-group">
+          <label for="password">Mot de passe</label>
+          <input class="form-control" type="password" [(ngModel)]="password" placeholder="Entrer your password">
+        </div>
+        <div class="form-group">
+          <label for="passwordVerif">Confirmer</label>
+          <input class="form-control" type="password" [(ngModel)]="passwordVerif" placeholder="Confirm your password">
+        </div>
+        <div class="form-group">
+          <input class="btn btn-primary" type="submit" value="S'inscrire">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
